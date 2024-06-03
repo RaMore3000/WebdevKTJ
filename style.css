@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    border: border-box; /* Border length comes inside element */
+}
+/* Navbar */
+html {
+    scroll-behavior: smooth;
+  }
+
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display:flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.nav-logo {
+    height: 50px;
+    width: 100px;
+}
+
+.logo {
+    background-image: url("logo.jpeg");
+    background-size: contain;
+    height: 50px;
+    width: 50%;
+}
+
+#Library {
+    height: 600px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #0f1111;
+}
+
+.border {
+    border: 1.5px solid transparent;
+}
+
+.border:hover {
+    border: 1.5px solid white;
+}
+
+.nav-scroll a {
+    color: white;
+    text-decoration-line: none;
+}
+
+#Albums {
+    height: 630px;
+    background-color: #0f1111;
+}
+#Featured {
+    height: 600px;
+    background-color: #0f1111;
+   
+}
+#Review {
+    height: 600px;
+    background-color: #0f1111;
+    
+}
+
+#Media {
+    height: 100px;
+    /* background-color: green; */
+}
+
+    
+#end2 {
+    margin-right: 20px;
+}
+#end1 {
+    margin-left: 10px;
+}
+
+/* Section 1 */
+#Library div {
+  display: inline-block;
+  align-self: center;
+}
+
+#title1 {
+  /* border: 2px solid black; */
+  width: 45%;
+  height: 500px;
+  text-align: center;
+  color: white;
+  background-image: url(back.jpeg);
+  background-size: 85.5%;
+}
+#animation {
+  /* border: 2px solid black; */
+  width: 45%;
+  height: 500px;
+  background-color: #0f1111;
+  position: static;
+  display: flex;
+  align-content: center;
+  background-image: url(music.avif);
+  background-size: contain;
+}
+
+.svganim {
+    /* border: 2px solid black; */
+    height: 80%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+:root {
+    --dark-color: #635bff;
+    --light-color: #80e9ff;
+  }
+
+  svg {
+    cursor: pointer;
+  }
+
+  #darkGroup {
+    fill: var(--dark-color);
+  }
+  #lightGroup {
+    fill: var(--light-color);
+  }
+  #dark1,
+  #light1,
+  #dark2 {
+    transition: all 1s ease;
+  }
+  #dark2 {
+    transform: translateX(-100%);
+  }
+  svg:hover #light1 {
+    transform: translateX(20%);
+  }
+  svg:hover #dark1 {
+    transform: translateX(40%);
+    opacity: 0;
+  }
+  svg:hover #dark2 {
+    transform: translateX(0%);
+  }
+
+#title h1 {
+    font-family: "Gill Sans", sans-serif;
+}
+
+button  a {
+    text-decoration: none;
+    color: #0f1111
+}
+button {
+    background-color: rgb(178, 215, 218);
+}
+
+/* Section 2 */
+#title2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 45px;
+    height: 60px;
+    width:100%
+}
+.box {
+    display: flex;
+    justify-content: space-evenly;
+}
+#old, #SRK, #International, #Party {
+    margin-top: 20px;
+    height: 490px;
+    width:23%;
+    display: inline-block;
+}
+
+#number {
+   text-align: right;
+   color: white;
+   font-size:1.3rem ;
+   font-style: italic;
+   justify-content: center;
+   background-color: #0f1111;
+}
+#image1 {
+    background-image: url(old.jpeg);
+    background-size:cover ;
+}
+#image2 {
+    background-image: url(90.jpeg);
+   background-size:cover ;
+}
+#image3 {
+    background-image: url(tay.jpeg);
+    background-size:cover ;
+}
+#image4 {
+    background-image: url(yo.webp);
+    background-size:cover ;
+}
+
+#naming {
+    color: white;
+    background-color: #0f1111;
+}
+.follow1-button-container {
+    display: inline-block;
+}
+
+#follow1-checkbox {
+    display: none;
+}
+
+.follow1-button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#follow1-checkbox:checked + .follow1-button {
+    background-color: green;
+    color: white;
+}
+
+#follow1-checkbox:checked + .follow1-button::after {
+    content: "ing";
+    color: white;
+}
+
+.follow2-button-container {
+    display: inline-block;
+}
+
+#follow2-checkbox {
+    display: none;
+}
+
+.follow2-button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#follow2-checkbox:checked + .follow2-button {
+    background-color: green;
+    color: white;
+}
+
+#follow2-checkbox:checked + .follow2-button::after {
+    content: "ing";
+    color: white;
+}
+
+.follow3-button-container {
+    display: inline-block;
+}
+
+#follow3-checkbox {
+    display: none;
+}
+
+.follow3-button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#follow3-checkbox:checked + .follow3-button {
+    background-color: green;
+    color: white;
+}
+
+#follow3-checkbox:checked + .follow3-button::after {
+    content: "ing";
+    color: white;
+}
+
+.follow4-button-container {
+    display: inline-block;
+}
+
+#follow4-checkbox {
+    display: none;
+}
+
+.follow4-button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#follow4-checkbox:checked + .follow4-button {
+    background-color: green;
+    color: white;
+}
+
+#follow4-checkbox:checked + .follow4-button::after {
+    content: "ing";
+    color: white;
+}
+/* section3 */
+#title3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 45px;
+    height: 60px;
+    width:100%
+}
+.box2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+#kishor, #Rehman, #RHTDM, #Marathi {
+    margin-top: 20px;
+    height: 500px;
+    width:23%;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 250px;
+   margin-left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 20px;
+    overflow: hidden; /* Ensure the border-radius is applied to children */
+}
+.search-container:hover {
+    border: 2px solid orange;
+}
+
+.search-input {
+    flex-grow: 1; /* Take up all available space */
+    padding: 10px;
+    border: none;
+    outline: none; /* Remove outline on focus */
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.box2 button {
+    color: black;
+    background-color: white;
+    }
+.box2 button:hover {
+   background-color: #0056b3;
+}
+
+#Image1 {
+    background-image: url(kishor.jpeg);
+     background-size:contain ;
+    background-repeat: no-repeat; 
+}
+#Image2 {
+    background-image: url(Rehman.jpeg);
+    background-size:contain ;
+    background-repeat: no-repeat;
+}
+#Image3 {
+    background-image: url(rhtdm.jpeg);
+    background-size:contain ;
+    background-repeat: no-repeat;
+}
+#Image4 {
+    background-image: url(saree.jpeg);
+    background-size:contain ;
+    background-repeat: no-repeat;
+}
+
+.card :hover {
+    border: 2px solid white;
+}
+
+ #kishor:hover {
+    border: 2px solid white;
+    transform: scale(1.1);
+}
+ #Rehman:hover {
+    border: 2px solid white;
+    transform: scale(1.1);
+}
+ #RHTDM:hover {
+    border: 2px solid white;
+    transform: scale(1.1);
+}
+ #Marathi:hover {
+    border: 2px solid white;
+    transform: scale(1.1);
+}
+/* SECTION 5 */
+.pages {
+    display: flex;
+    justify-content: space-evenly;
+}
+#Review div {
+    /* border: 2px solid black; */
+}
+
+#page1, #page2 {
+    width: 50%;
+    height: 500px;
+}
+
+.star-rating {
+    display: flex;
+    direction: row;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    cursor: pointer;
+    color: #ccc;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input:checked ~ label {
+    color: #f5b301;
+}
+#Rate {
+    font-size: 1.5rem;
+    margin-right: 50px;
+}
+#page1 div{
+     height: 33%;
+     background-color: white;
+     margin-left: 20px;
+     margin-right: 20px;
+}
+#b1 {
+    background-image: url(user1.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+#b2 #b3 {
+    color: black;
+}
+.review1 , .review2, .review3 {
+    border: 2px solid rgb(198, 195, 10);
+    border-radius: 20px;
+}
+
+/* page 2 */
+#page2 {
+    border: 2px white solid;
+    background-color: #7dcfb6;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+#page2 div {
+    /* border: 2px solid #0f1111; */
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+#page2 button{
+    background-color: white;
+}
+#page2 button:hover{
+    background-color: #0056b3;
+}
+#form {
+    height: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+/* section 6 */
+#Media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+#Media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+#Media i {
+    font-size: 2rem;
+}
+
+#Media a:hover {
+    color: #007bff;
+}
+
+.i{
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+i:hover {
+    transform: scale(1.2);
+}
+#Media {
+    display: inline-flexbox;
+    justify-content: space-evenly;
+
+}
+#back {
+    padding: 20px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+#back button {
+    background-color: white;
+}
+#back button:hover {
+    background-color: #007bff;
+}
