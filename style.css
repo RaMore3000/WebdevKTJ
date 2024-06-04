@@ -30,13 +30,12 @@ html {
     height: 50px;
     width: 50%;
 }
-@media {
+@media (max-width: 600px){
     .logo {
         background-repeat: no-repeat;
         background-color: #0f1111;
     }
 }
-
 #Library {
     height: 600px;
     background-color: aqua;
@@ -106,6 +105,7 @@ html {
     #title1 {
         background-repeat: no-repeat;
         background-color: #0f1111;
+        font-size: 0.5rem;
     }
 }
 
@@ -464,10 +464,6 @@ button {
     display: flex;
     justify-content: space-evenly;
 }
-#Review div {
-    /* border: 2px solid black; */
-}
-
 #page1, #page2 {
     width: 50%;
     height: 500px;
