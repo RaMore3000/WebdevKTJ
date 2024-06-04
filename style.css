@@ -571,3 +571,27 @@ i:hover {
 #back button:hover {
     background-color: #007bff;
 }
+
+@media (max-width: 600px) {
+    #old, #SRK, #International, #Party {
+        width: 100%;
+    }
+        .navbar {
+            width: 100%;
+        }
+        #Library {
+            width: 100%;
+        }
+        #Featured {
+            width: 100%;
+        }
+        #Albums {
+            width: 100%;
+        }
+        #Review {
+            width: 100%;
+        }
+        #Media {
+            width: 100%;
+        }
+}
