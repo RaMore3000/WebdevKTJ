@@ -34,6 +34,7 @@ html {
     .logo {
         background-repeat: no-repeat;
         background-color: #0f1111;
+
     }
 }
 #Library {
@@ -606,6 +607,7 @@ i:hover {
 @media (max-width: 700px) {
     #old, #SRK, #International, #Party {
         width: 100%;
+        height: auto;
     }
         .navbar {
             width: 100%;
@@ -632,3 +634,4 @@ i:hover {
             background-repeat: no-repeat;
         }
     }
+ 
