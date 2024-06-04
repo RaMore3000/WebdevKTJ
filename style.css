@@ -595,3 +595,9 @@ i:hover {
             width: 100%;
         }
 }
+@media (max-width: 600px) {
+        * {
+            background-repeat: no-repeat;
+        }
+    }
+
