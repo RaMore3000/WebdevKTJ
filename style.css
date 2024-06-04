@@ -634,4 +634,9 @@ i:hover {
             background-repeat: no-repeat;
         }
     }
+   @media (max-width: 700px) {
+        #title3 {
+            margin-left: 20px;
+        }
+    }
  
