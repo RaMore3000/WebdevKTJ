@@ -27,6 +27,7 @@ html {
 .logo {
     background-image: url("logo.jpeg");
     background-size: contain;
+    background-repeat: no-repeat;
     height: 50px;
     width: 50%;
 }
