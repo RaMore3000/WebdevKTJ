@@ -30,6 +30,12 @@ html {
     height: 50px;
     width: 50%;
 }
+@media {
+    .logo {
+        background-repeat: no-repeat;
+        background-color: #0f1111;
+    }
+}
 
 #Library {
     height: 600px;
