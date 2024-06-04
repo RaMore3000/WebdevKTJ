@@ -636,7 +636,7 @@ i:hover {
     }
    @media (max-width: 700px) {
         #title3 {
-            margin-left: 20px;
+            text-align : center;
         }
     }
  
